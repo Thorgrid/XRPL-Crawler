@@ -1,5 +1,4 @@
-@ECHO Uninstalling Service...
-@SET PATH=%PATH%;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\
-@InstallUtil /u XRPLCrawler.exe
-@ECHO Uninstall Done.
-@pause
+rem file needs to be run with administrator permissions
+@echo off
+"C:\Windows\Microsoft.NET\Framework64\v4.0.30319\installutil.exe" /u "%~d0%~p0\XRPLCrawler.exe"
+pause
