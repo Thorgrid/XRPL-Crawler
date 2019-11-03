@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />
+    </startup>
+  <appSettings>
+    <add key="PathForNodeList" value=""/><!-- path should include trailing slash but not a file name -->
+    <add key="NodeListName" value="history-nodes.txt"/><!-- output file name, tab delimited, [ip] [is full history] -->
+    <add key="SerivceName" value="XRPL Crawler"/><!-- name of windows service -->
+    <add key="ServiceScheduleDay" value="Sunday"/><!-- weekly -->
+    <add key="ServiceScheduleTime" value="3:00"/><!-- CST (-6 UTC) -->
+    <add key="SerivceGithubUploadUsername" value=""/><!-- Username to upload history node list under in Github or leave blank -->
+    <add key="SerivceGithubUploadRepositoryName" value=""/><!-- Repository name to upload history node list to in Github or leave blank -->
+    <add key="SerivceGithubUploadDirectoryName" value=""/><!-- Directory name to upload history node list to in Github or leave blank, include trailing slash -->
+    <add key="SerivceGithubOAuthToken" value=""/><!-- authentication token for Github repository or leave blank -->
+    <add key="OriginNodeUrl" value="https://s2.ripple.com:51235/crawl"/><!-- starting node to crawl from -->
+  </appSettings>
+</configuration>
