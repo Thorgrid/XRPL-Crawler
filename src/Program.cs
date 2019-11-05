@@ -167,6 +167,8 @@ namespace XRPLCrawler
                     using (client = new HttpClient())
                     {
                         client.Timeout = new TimeSpan(0, 0, 3);
+                        ServicePointManager.Expect100Continue = true;
+                        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
                         ServicePointManager.ServerCertificateValidationCallback += (sender, cert, chain, sslPolicyErrors) => true;
                         GatherAllNodes(originNodeUrl);
                     }
